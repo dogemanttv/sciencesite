@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<style>
+img {
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  padding: 3px;
+  width: 500px;
+  height: 300px;
+}
+</style>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+  p, a, button, select {
+    font-family: 'Ubuntu', sans-serif;
+}
+</style>
+<style>
+.arial {
+  font-family: Arial, Helvetica, sans-serif;
+}</style>
+<title>Cool Desert Images</title>
+<html>
+<body>
+  <a href="index.html">Home Page</a>
+  <br>
+  <img src="img/coolimage1.jpg" alt="Cool Image 1">
+  <img src="img/coolimage2.jpg" alt="Cool Image 2">
+  <img src="img/coolimage3.jpg" alt="Cool Image 3">
+  <img src="img/coolimage4.jpg" alt="Cool Image 4">
+  <style>
+    #footer {
+        position:fixed;bottom:0;left: 10px;right:0;height:80px;
+    }
+    </style>
+<footer id="footer">
+    <div>
+    <p>Change the color of this website!</p>
+    </div>
+     
+     <select id="selector">
+      <option value="red" selected="selected" >Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+      <option value="yellow">Yellow</option>
+      <option value="pink">Pink</option>
+      <option value="purple">Purple</option>
+      <option value="orange">Orange</option>
+    </select>
+    
+    <script>var e = document.getElementById("selector");
+    var value = e.options[e.selectedIndex].value;
+    var text = e.options[e.selectedIndex].text;</script>
+    
+    
+    <script>function changeBackground(color) {
+       document.body.style.background = color;
+    }
+    
+    window.addEventListener("load",function() { changeBackground('white') });</script>
+    <button type="button" onclick="changeBackground(e.options[e.selectedIndex].value)">change color</button>
+    </footer>
+</body>
+</html> 

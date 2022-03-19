@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <link href="http://fonts.cdnfonts.com/css/modenine" rel="stylesheet">
+        <style>
+            marquee {
+                font-family: 'ModeNine', sans-serif;
+                                                
+          }
+        </style>
+        <style>
+            img{
+                cursor: pointer;
+            }
+        </style>
+        <style>img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+          }</style>
+        <style>marquee{
+            font-size:50px;
+            }</style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <marquee id="marquee1" bgcolor="#ff0000" height="50px" scrolldelay="0" scrollamount="40" behavior="scroll">DO NOT PRESS THE BUTTON</marquee>
+        <title>Red Button</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    
+    <script>
+    function buttonPress() {
+        document.body.style.background = "#000000";
+        document.getElementById('marquee1').stop()
+        document.getElementById('marquee1').innerText="YOU SHOULDN'T HAVE PRESSED THE BUTTON..."
+        while (true) { window.location.reload(true); };
+
+    }
+    </script>z
+    <img id="center" src="img/button.png" onclick="buttonPress()">
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+    </body>
+</html>
